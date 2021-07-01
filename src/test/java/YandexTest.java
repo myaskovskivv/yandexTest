@@ -21,7 +21,7 @@ public class YandexTest extends BaseSteps {
         MainSteps mainSteps = new MainSteps();
         ElectricSteps electricSteps = new ElectricSteps();
         mainSteps.stepSelectMainMenu("Электроника");
-        electricSteps.stepSelectElectricMenu();
+        //electricSteps.stepSelectElectricMenu();
 
         // MainPage mainPage = new MainPage();
         //mainPage.selectMenuMine("Электроника");

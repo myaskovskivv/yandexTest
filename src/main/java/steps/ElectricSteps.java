@@ -9,4 +9,9 @@ public class ElectricSteps {
     public void stepSelectElectricMenu(){
         new ElectricPage().tv.click();
     }
+
+    @Step ("выбран пункт меню {0}")
+    public void stepSelectElectricHeadPhoneMenu(){
+        new ElectricPage().headphones.click();
+    }
 }

@@ -11,16 +11,10 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import steps.BaseSteps;
 
-import java.util.concurrent.TimeUnit;
-
 public class TvPage extends BasePage{
 
     @FindBy(xpath = "//*[@id=\"search-prepack\"]/div/div/div/div/div[2]/div[5]/div/div/fieldset/legend")
     public WebElement title;
-
-    @FindBy(xpath = "//INPUT[@id='glpricefrom']"
-    )
-    public WebElement priceFrom;
 
     @FindBy(xpath = "//DIV[@class='LhMupC0dLR']//*[contains(text(),'Samsung')]"
     )
@@ -30,17 +24,15 @@ public class TvPage extends BasePage{
     )
     public WebElement Lg;
 
-    @FindBy(xpath = "//*[contains(text(),'по цене')]"
+    @FindBy(xpath =   "//*[contains(@class,'_3JNss')]//*[contains(@class,'vLDMfaby')]"
     )
-    public WebElement sortPrice;
+    public WebElement sortSumElement;
 
     @FindBy(xpath = "//BUTTON[@class='_1KpjX8xME8 _35PaznpQ-g'][text()='Показывать по 12']"
     )
     public WebElement sortSumElement12;
 
-    @FindBy(xpath =   "//*[contains(@class,'_3JNss')]//*[contains(@class,'vLDMfaby')]"
-    )
-    public WebElement sortSumElement;
+
 
 
 
@@ -74,12 +66,4 @@ public class TvPage extends BasePage{
                 break;
         }
     }
-
-
-
-   // public void  fillField(WebElement element, String value) {
-   //     element.clear();
-  //      element.sendKeys(value);
-  //  }
-
 }
